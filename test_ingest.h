@@ -14,3 +14,4 @@
 
 std::string make_ingest_request(std::string ip_address, std::string path, std::string json);
 int hello_ingest(std::string ip_address, std::string content_provider_id, std::string access_token);
+int ingest_get_categories(std::string ip_address, std::string content_provider_id, std::string access_token);

@@ -112,7 +112,12 @@ int main(int argc, char* argv[])
 {
   try{
 
-    //hello_ingest("", "test", "test123"); 
+    //std::string cpid = "";
+    //std::string tok = "";
+    //std::string ingip = "";
+    //hello_ingest(ingip, cpid, tok); 
+    //ingest_get_categories(ingip, cpid, tok); 
+
     if (argc != 5)
       {
 	std::cout << "Usage: client <server> <schemaName> <tenantId> <publicKey>\n";
