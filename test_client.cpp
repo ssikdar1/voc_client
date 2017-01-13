@@ -6,6 +6,7 @@
 #include <json/json_object.h>
 #include <string>
 
+#include "test_ingest.h"
 
 std::string make_request(std::string ip_address,  std::string schema_name,
                 std::string tenant_id, std::string sdk_key,
@@ -86,6 +87,7 @@ int get_policy(std::string arv1, std::string arv2, std::string arv3, std::string
   return 0;
 }
 
+
 int register_user(std::string arv1, std::string arv2, std::string arv3, std::string arv4)
 {
   boost::asio::io_service io_service;
@@ -110,6 +112,7 @@ int main(int argc, char* argv[])
 {
   try{
 
+    //hello_ingest("", "test", "test123"); 
     if (argc != 5)
       {
 	std::cout << "Usage: client <server> <schemaName> <tenantId> <publicKey>\n";

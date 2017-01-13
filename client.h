@@ -39,7 +39,7 @@ class client
 	 std::string tenant_id, std::string public_key, std::string path, xtype type);
 
   client(boost::asio::io_service& io_service, boost::asio::ssl::context& context,
-         boost::asio::ip::tcp::resolver::iterator endpoint_iterator, std::string server, std::string json);
+         boost::asio::ip::tcp::resolver::iterator endpoint_iterator, std::string server, std::string path, std::string json);
 
   bool verify_certificate(bool preverified, boost::asio::ssl::verify_context& ctx);
 
